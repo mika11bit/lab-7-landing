@@ -356,6 +356,14 @@ body {
 /* ??? ADAPTIVE */
 
 @media (max-width: 768px) {
+	/* ! header title */
+	.header_title {
+		font-size: 22px;
+	}
+	.header_subtitle,
+	.sub_text {
+		font-size: 14px;
+	}
 	/* ! gallery */
 	.gallery {
 		justify-content: space-between;
@@ -391,7 +399,20 @@ body {
 		box-shadow: 0 1vh 1vh rgb(0, 0, 0, 0.25);
 	}
 	.nav_menu {
-		display: none;
+		flex-direction: column;
+		position: absolute;
+		height: auto;
+		top: 100%;
+
+		display: inline;
+		opacity: 0;
+		transition: all 0.7s linear;
+
+		transform: translateY(-200%);
+	}
+	.menu_show {
+		opacity: 1;
+		transform: translateY(0);
 	}
 	/* ! burger menu */
 	.burger_menu {
@@ -401,6 +422,11 @@ body {
 		margin-right: 2vw;
 		height: 100%;
 		aspect-ratio: 1/1;
+		cursor: pointer;
+	}
+	.nav_menu div {
+		background: rgb(192, 192, 192);
+		border-top: 1px solid rgb(0, 0, 0, 0.5);
 	}
 	/* ! burger btn */
 	.burger_btn,
