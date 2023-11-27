@@ -137,7 +137,7 @@ body {
 /* * gallery */
 .gallery {
 	width: 100%;
-	overflow: hidden;
+
 	gap: 1vw;
 
 	display: flex;
@@ -149,7 +149,12 @@ body {
 .gallery_container {
 	flex-direction: column;
 }
-
+.gallery_title {
+	font-size: 30px;
+}
+.gallery_title b {
+	color: red;
+}
 .gallery_title_container {
 	width: 100%;
 	display: flex;
@@ -216,6 +221,7 @@ body {
 
 /* ?  pre title*/
 .pre_title_container {
+	font-size: 30px;
 	width: 100%;
 	display: flex;
 	align-items: start;
@@ -226,6 +232,9 @@ body {
 .pre_title {
 	margin: 0 0 2vh 0;
 	text-transform: uppercase;
+}
+.pre_title b {
+	color: red;
 }
 /* ? */
 .hor_cards {
@@ -359,6 +368,13 @@ body {
 	/* ! header title */
 	.header_title {
 		font-size: 22px;
+	}
+
+	.gallery_title {
+		font-size: 20px;
+	}
+	.pre_title {
+		font-size: 20px;
 	}
 	.header_subtitle,
 	.sub_text {
